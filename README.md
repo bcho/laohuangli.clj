@@ -10,7 +10,7 @@ user=> (pprint (laohuangli.generator/huangli))
  :good
  ({:name "使用iOS设备", :reason "你看起来更有品味"}
   {:name "申请加薪", :reason "老板今天心情很好"}
-  {:name "代��复审", :reason "发现重要问题的几率大大增加"}
+  {:name "代码复审", :reason "发现重要问题的几率大大增加"}
   {:name "设计评审", :reason "设计评审会议将变成头脑风暴"}),
  :bad
  ({:name "使用iOS设备", :reason "别人会觉得你在装逼"}
