@@ -85,11 +85,12 @@
 (defn huangli-activites []
   (let [activites (today-available-activites)
         count-good (-> (random 98) (mod 3) (+ 2))
-        activites-good (map present-good-active (pick-items activites count-good))
         count-bad (-> (random 87) (mod 3) (+ 2))
-        activites-bad (map present-bad-active (pick-items activites count-bad))]
-      {:good activites-good
-       :bad activites-bad}))
+        picked-activites (pick-items activites (+ count-good count-bad))]
+      {:good (map present-good-active
+                  (subvec picked-activites 0 count-good))
+       :bad (map present-bad-active
+                 (subvec picked-activites (inc count-good)))}))
 
 
 (defn huangli-drinkings [] {:drinkings (pick-items const/drinkings 2)})

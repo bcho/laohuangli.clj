@@ -6,20 +6,18 @@
 
 ```clojure
 user=> (pprint (laohuangli.generator/huangli))
-{:date {:year 2015, :month 11, :day 8, :dayOfWeek :星期日},
+{:date {:year 2015, :month 11, :day 10, :dayOfWeek :星期二},
  :good
- ({:name "使用iOS设备", :reason "你看起来更有品味"}
-  {:name "申请加薪", :reason "老板今天心情很好"}
-  {:name "代码复审", :reason "发现重要问题的几率大大增加"}
-  {:name "设计评审", :reason "设计评审会议将变成头脑风暴"}),
+ ({:name "白天上线", :reason "今天白天上线是安全得"}
+  {:name "重构", :reason "代码质量得到提高"}
+  {:name "跳槽", :reason "该放手时就放手"}
+  {:name "面试", :reason "面试官今天心情很好"}),
  :bad
- ({:name "使用iOS设备", :reason "别人会觉得你在装逼"}
-  {:name "申请加薪", :reason "公司正在考虑裁员"}
-  {:name "代码复审", :reason "你什么问题都发现不了，白白浪费时间"}
+ ({:name "申请加薪", :reason "公司正在考虑裁员"}
   {:name "设计评审", :reason "人人筋疲力尽，评审就这么过了"}),
- :drinkings ["水" "可乐"],
- :directions :北方,
- :goddess (\★ \★ \☆ \☆ \☆)}
+ :drinkings ["绿茶" "咖啡"],
+ :directions :东北方,
+ :goddess (\★ \★ \★ \★ \★)}
 ```
 
 ## License
