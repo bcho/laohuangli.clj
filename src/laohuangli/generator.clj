@@ -102,7 +102,7 @@
 
 
 (defn huangli-goddess []
-  (let [i (+ (mod (random 6) 5) 1)]
+  (let [i (inc (mod (random 6) 5))]
     {:goddess (drop (- 5 i) (take (- 10 i) "★★★★★☆☆☆☆☆"))}))
 
 
